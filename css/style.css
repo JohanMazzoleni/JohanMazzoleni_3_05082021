@@ -43,7 +43,7 @@ body {
     font-size: 25px;
     margin: 0;
   }
-  .hero h2 {
+  .hero .little {
     padding-top: 10px;
     margin: 0;
     font-size: 18px;
