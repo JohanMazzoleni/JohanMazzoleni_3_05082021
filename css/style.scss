@@ -75,3 +75,42 @@ body {
         }
     }
 }
+
+.hero {
+    @include mobile {
+        text-align: center;
+        background: #eeeeee;
+        h1 {
+            padding-top: 28px;
+            font-weight: bold;
+            font-size: 25px;
+            margin: 0;
+        }
+
+        h2 {
+            padding-top: 10px;
+            margin: 0;
+            font-size: 18px;
+            color: #696969;
+        }
+
+        .button {
+            padding-top: 36px;
+            padding-bottom: 60px;
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                color: white;
+                background-image: linear-gradient(#ff79da, #9356dc);
+                padding: 15px;
+                border-radius: 20px;
+                border: 0;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                &:hover {
+                    box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+                    background-image: linear-gradient(#ff9ee3, #a372df);
+                }
+            }
+        }
+    }
+}
