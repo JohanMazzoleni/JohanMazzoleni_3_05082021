@@ -18,4 +18,17 @@ body {
     width: 200px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .location {
+    padding: 15px;
+    text-align: center;
+    background: #e8e8e8;
+    font-weight: bold;
+    color: #313131;
+  }
+  .location i {
+    margin-right: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
