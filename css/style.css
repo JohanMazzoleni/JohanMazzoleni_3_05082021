@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 body {
-  margin: 12px 0 0 0;
+  margin: 0;
   font-family: "Roboto", sans-serif;
   background: #f6f6f6;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding-top: 15px;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .header img {
+    padding: 10px;
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
