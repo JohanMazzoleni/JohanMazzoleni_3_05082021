@@ -114,3 +114,65 @@ body {
         }
     }
 }
+
+.working {
+    @include mobile {
+        h2 {
+            margin: 0;
+            margin-top: 50px;
+            margin-left: 10px;
+            font-size: 28px;
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .work-card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                border-radius: 20px;
+                display: flex;
+                position: relative;
+                align-items: center;
+                padding: 10px;
+                margin-top: 30px;
+                width: 80%;
+                .number {
+                    background-color: $primary;
+                    position: absolute;
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    left: -19px;
+                    top: 19px;
+                    color: white;
+                }
+
+                .icone {
+                    margin-left: 32px;
+                    i {
+                        color: grey;
+                        font-size: 25px;
+                    }
+                }
+
+                h3 {
+                    margin-left: 30px;
+                }
+
+                &:hover {
+                    background: #9356dc1c;
+                    i {
+                        color: $primary;
+                        font-size: 25px;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
