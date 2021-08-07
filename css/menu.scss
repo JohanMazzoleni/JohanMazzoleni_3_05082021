@@ -1,2 +1,19 @@
-@import './global.scss';
+@import "./global.scss";
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+        width: 250px;
+    }
+
+    i {
+        cursor: pointer;
+        position: absolute;
+        font-size: 25px;
+        left: 0;
+    }
+}
