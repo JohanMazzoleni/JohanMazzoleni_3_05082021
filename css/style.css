@@ -1,5 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@-webkit-keyframes heart-animation {
+  from {
+    fill: white;
+    stroke: black;
+  }
+  to {
+    stroke-width: 5;
+    stroke: black;
+    fill: #9356dc;
+  }
+}
+@keyframes heart-animation {
+  from {
+    fill: white;
+    stroke: black;
+  }
+  to {
+    stroke-width: 5;
+    stroke: black;
+    fill: #9356dc;
+  }
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -142,6 +165,78 @@ body {
   .working .list .work-card:hover i {
     color: #9356dc;
     font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .restaurant h2 {
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 28px;
+  }
+  .restaurant .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restaurant .list .card {
+    margin-top: 20px;
+    width: 90%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .restaurant .list .card .image {
+    position: relative;
+  }
+  .restaurant .list .card .image img {
+    width: 100%;
+    height: 260px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .restaurant .list .card .image .new {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    background: #99e2d0;
+    color: green;
+    border-radius: 5px;
+  }
+  .restaurant .list .card .bottom {
+    position: relative;
+    padding: 10px;
+  }
+  .restaurant .list .card .bottom h3,
+  .restaurant .list .card .bottom span {
+    margin: 0;
+    margin-left: 10px;
+  }
+  .restaurant .list .card .bottom .heart svg {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    font-size: 30px;
+    cursor: pointer;
+    fill: white;
+    width: 30px;
+    stroke: black;
+    stroke-width: 12px;
+  }
+  .restaurant .list .card .bottom .heart svg:hover {
+    stroke: white;
+    -webkit-animation: heart-animation 1.5s forwards;
+            animation: heart-animation 1.5s forwards;
   }
 }
 /*# sourceMappingURL=style.css.map */
