@@ -297,4 +297,33 @@ body {
 .menu .plat .list .card:hover > .price {
   position: relative;
 }
+
+.button {
+  text-align: center;
+  padding-top: 36px;
+}
+
+.button a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
+  font-weight: bold;
+  padding: 14px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button a:hover {
+  -webkit-box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9ee3), to(#a372df));
+  background-image: linear-gradient(#ff9ee3, #a372df);
+}
 /*# sourceMappingURL=menu.css.map */
