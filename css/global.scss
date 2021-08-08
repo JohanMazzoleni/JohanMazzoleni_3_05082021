@@ -81,15 +81,3 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
         }
     }
 }
-
-@keyframes heart-animation {
-    from {
-        fill: white;
-        stroke: black;
-    }
-    to {
-        stroke-width: 5;
-        stroke: black;
-        fill: $primary;
-    }
-}

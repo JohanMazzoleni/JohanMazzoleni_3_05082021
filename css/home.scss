@@ -1,22 +1,10 @@
-@import "./global.scss";
+@import "global";
+@import 'animation';
 
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     background: #f6f6f6;
-}
-
-@keyframes loading {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
 }
 
 .loader {

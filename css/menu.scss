@@ -1,24 +1,6 @@
-@import "./global.scss";
+@import "global";
+@import 'animation';
 
-@keyframes activate {
-    0% {
-        transform: translateX(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(80deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
 
 body {
     margin: 0;
@@ -60,16 +42,7 @@ body {
     }
 }
 
-@keyframes fade-in-bottom {
-    0% {
-        transform: translateY(5px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+
 
 $menu-item: 9;
 
