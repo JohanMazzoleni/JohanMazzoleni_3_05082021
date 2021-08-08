@@ -45,36 +45,34 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 }
 
 .footer {
-    // @include mobile {
-        background: #353535;
-        margin-top: 40px;
-        .logo {
-            font-family: "Shrikhand", cursive;
-            padding-top: 20px;
-            padding-left: 25px;
-            font-size: 20px;
+    background: #353535;
+    margin-top: 40px;
+    .logo {
+        font-family: "Shrikhand", cursive;
+        padding-top: 20px;
+        padding-left: 25px;
+        font-size: 20px;
+        color: white;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        font-weight: 300;
+        margin-left: 25px;
+        margin-top: 15px;
+        .text {
+            padding: 6px;
+            margin: 0;
+            font-size: 15px;
+        }
+        i {
+            margin-right: 10px;
+        }
+        a {
             color: white;
+            text-decoration: none;
         }
-        .navigation {
-            display: flex;
-            flex-direction: column;
-            font-weight: 300;
-            margin-left: 25px;
-            margin-top: 15px;
-            .text {
-                padding: 6px;
-                margin: 0;
-                font-size: 15px;
-            }
-            i {
-                margin-right: 10px;
-            }
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-    // }
+    }
     @include tablet {
         .navigation {
             justify-content: space-around;
