@@ -40,4 +40,28 @@
   color: white;
   text-decoration: none;
 }
+
+@-webkit-keyframes heart-animation {
+  from {
+    fill: white;
+    stroke: black;
+  }
+  to {
+    stroke-width: 5;
+    stroke: black;
+    fill: #9356dc;
+  }
+}
+
+@keyframes heart-animation {
+  from {
+    fill: white;
+    stroke: black;
+  }
+  to {
+    stroke-width: 5;
+    stroke: black;
+    fill: #9356dc;
+  }
+}
 /*# sourceMappingURL=global.css.map */

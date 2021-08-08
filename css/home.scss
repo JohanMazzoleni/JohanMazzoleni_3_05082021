@@ -1,17 +1,5 @@
 @import './global.scss';
 
-@keyframes heart-animation {
-    from {
-        fill: white;
-        stroke: black;
-    }
-    to {
-        stroke-width: 5;
-        stroke: black;
-        fill: $primary;
-    }
-}
-
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;

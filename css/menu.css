@@ -41,8 +41,81 @@
   text-decoration: none;
 }
 
+@-webkit-keyframes heart-animation {
+  from {
+    fill: white;
+    stroke: black;
+  }
+  to {
+    stroke-width: 5;
+    stroke: black;
+    fill: #9356dc;
+  }
+}
+
+@keyframes heart-animation {
+  from {
+    fill: white;
+    stroke: black;
+  }
+  to {
+    stroke-width: 5;
+    stroke: black;
+    fill: #9356dc;
+  }
+}
+
+@-webkit-keyframes activate {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes activate {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -63,11 +136,16 @@ body {
   width: 250px;
 }
 
+.header a {
+  color: black;
+  text-decoration: none;
+}
+
 .header i {
   cursor: pointer;
   position: absolute;
   font-size: 25px;
-  left: 10px;
+  left: 25px;
 }
 
 .top-background img {
@@ -75,5 +153,148 @@ body {
   height: 310px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.menu {
+  background: white;
+  top: -50px;
+  position: relative;
+  border-radius: 30px 30px 0 0;
+}
+
+.menu .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .title h1 {
+  padding-top: 20px;
+  font-family: "Shrikhand", cursive;
+  margin-left: 20px;
+}
+
+.menu .title .heart svg {
+  position: absolute;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  fill: white;
+  width: 30px;
+  stroke: black;
+  stroke-width: 12px;
+}
+
+.menu .title .heart svg:hover {
+  stroke: white;
+  -webkit-animation: heart-animation 1.5s forwards;
+          animation: heart-animation 1.5s forwards;
+}
+
+.menu .plat .plat-type {
+  margin-left: 20px;
+  font-weight: 100;
+  position: relative;
+}
+
+.menu .plat .plat-type::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #8cddc9;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+
+.menu .plat .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .plat .list .card {
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  border-radius: 20px;
+  width: 90%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.menu .plat .list .card .name {
+  padding: 15px;
+}
+
+.menu .plat .list .card .name h3 {
+  font-size: 17px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.menu .plat .list .card .price {
+  font-weight: bold;
+  top: 39%;
+  right: 10px;
+  position: absolute;
+}
+
+.menu .plat .list .card .active {
+  border-radius: 0 20px 20px 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #99e2d0;
+}
+
+.menu .plat .list .card .active i {
+  color: white;
+  font-size: 30px;
+}
+
+.menu .plat .list .card:hover {
+  -ms-grid-columns: 70% 10% 20%;
+      grid-template-columns: 70% 10% 20%;
+}
+
+.menu .plat .list .card:hover > .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: activate 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: activate 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.menu .plat .list .card:hover > .active i {
+  -webkit-animation: rotate 1s forwards;
+          animation: rotate 1s forwards;
+}
+
+.menu .plat .list .card:hover > .price {
+  position: relative;
 }
 /*# sourceMappingURL=menu.css.map */
