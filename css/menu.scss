@@ -26,149 +26,160 @@ body {
 }
 
 .header {
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    @include mobile {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
 
-    img {
-        width: 250px;
-    }
+        img {
+            width: 250px;
+        }
 
-    a {
-        color: black;
-        text-decoration: none;
-    }
+        .arrow {
+            position: absolute;
+            left: 15px;
+        }
 
-    i {
-        cursor: pointer;
-        position: absolute;
-        font-size: 25px;
-        left: 25px;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        i {
+            cursor: pointer;
+            // position: absolute;
+            font-size: 25px;
+            // left: 25px;
+        }
     }
 }
 
 .top-background {
-    img {
-        width: 100%;
-        height: 310px;
-        object-fit: cover;
+    @include mobile {
+        img {
+            width: 100%;
+            height: 310px;
+            object-fit: cover;
+        }
     }
 }
 
 .menu {
-    background: white;
-    top: -50px;
-    position: relative;
-    border-radius: 30px 30px 0 0;
-    .title {
-        display: flex;
-        align-items: center;
-        h1 {
-            padding-top: 20px;
-            font-family: "Shrikhand", cursive;
-            margin-left: 20px;
-            font-weight: 400;
-        }
-
-        .heart {
-            svg {
-                position: absolute;
-                right: 30px;
-                font-size: 30px;
-                cursor: pointer;
-                fill: rgb(255, 255, 255);
-                width: 30px;
-                stroke: black;
-                stroke-width: 12px;
-
-                &:hover {
-                    stroke: white;
-                    animation: heart-animation 1.5s forwards;
-                }
-            }
-        }
-    }
-
-    .plat {
-        .plat-type {
-            margin-left: 20px;
-            font-weight: 100;
-            position: relative;
-            &::after {
-                content: "";
-                width: 3rem;
-                height: 0.25rem;
-                background-color: #8cddc9;
-                position: absolute;
-                bottom: -3px;
-                left: 0;
-            }
-        }
-
-        .list {
+    @include mobile {
+        background: white;
+        top: -50px;
+        position: relative;
+        border-radius: 30px 30px 0 0;
+        .title {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            h1 {
+                padding-top: 20px;
+                font-family: "Shrikhand", cursive;
+                margin-left: 20px;
+                font-weight: 400;
+            }
 
-            .card {
-                overflow: hidden;
-                display: grid;
-                grid-template-columns: 80% 20%;
-                border-radius: 20px;
-                width: 90%;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                position: relative;
-                cursor: pointer;
-                margin-top: 10px;
-
-                .name {
-                    padding: 15px;
-                    h3 {
-                        font-size: 17px;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                        width: 100%;
-                        overflow: hidden;
-                        margin: 0;
-                        margin-bottom: 5px;
-                    }
-                }
-
-                .price {
-                    font-weight: bold;
-                    top: 39%;
-                    right: 10px;
+            .heart {
+                svg {
                     position: absolute;
-                }
+                    right: 30px;
+                    font-size: 30px;
+                    cursor: pointer;
+                    fill: rgb(255, 255, 255);
+                    width: 30px;
+                    stroke: black;
+                    stroke-width: 12px;
 
-                .active {
-                    border-radius: 0 20px 20px 0;
-                    display: none;
-                    justify-content: center;
-                    align-items: center;
-                    background: $tertiary;
-                    i {
-                        color: white;
-                        font-size: 30px;
+                    &:hover {
+                        stroke: white;
+                        animation: heart-animation 1.5s forwards;
                     }
                 }
+            }
+        }
 
-                &:hover {
-                    grid-template-columns: 70% 10% 20%;
+        .plat {
+            .plat-type {
+                margin-left: 20px;
+                font-weight: 100;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 3rem;
+                    height: 0.25rem;
+                    background-color: #8cddc9;
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
                 }
+            }
 
-                &:hover > .active {
-                    display: flex;
-                    animation: activate 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-                    i {
-                        animation: rotate 1s forwards;
-                    }
-                }
+            .list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-                &:hover > .price {
+                .card {
+                    overflow: hidden;
+                    display: grid;
+                    grid-template-columns: 80% 20%;
+                    border-radius: 20px;
+                    width: 90%;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                     position: relative;
+                    cursor: pointer;
+                    margin-top: 10px;
+
+                    .name {
+                        padding: 15px;
+                        h3 {
+                            font-size: 17px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            width: 100%;
+                            overflow: hidden;
+                            margin: 0;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    .price {
+                        font-weight: bold;
+                        top: 39%;
+                        right: 10px;
+                        position: absolute;
+                    }
+
+                    .active {
+                        border-radius: 0 20px 20px 0;
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        background: $tertiary;
+                        i {
+                            color: white;
+                            font-size: 30px;
+                        }
+                    }
+
+                    &:hover {
+                        grid-template-columns: 70% 10% 20%;
+                    }
+
+                    &:hover > .active {
+                        display: flex;
+                        animation: activate 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                        i {
+                            animation: rotate 1s forwards;
+                        }
+                    }
+
+                    &:hover > .price {
+                        position: relative;
+                    }
                 }
             }
         }
@@ -176,24 +187,26 @@ body {
 }
 
 .button {
-    text-align: center;
-    padding-top: 36px;
-    a {
-        text-decoration: none;
-        cursor: pointer;
-        color: white;
-        background-image: linear-gradient(#ff79da, #9356dc);
-        font-weight: bold;
-        padding: 14px;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 20px;
-        font-size: 15px;
-        border: 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        &:hover {
-            box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
-            background-image: linear-gradient(#ff9ee3, #a372df);
+    @include mobile {
+        text-align: center;
+        padding-top: 36px;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+            background-image: linear-gradient(#ff79da, #9356dc);
+            font-weight: bold;
+            padding: 14px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 20px;
+            font-size: 15px;
+            border: 0;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            &:hover {
+                box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+                background-image: linear-gradient(#ff9ee3, #a372df);
+            }
         }
     }
 }

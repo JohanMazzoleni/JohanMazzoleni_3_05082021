@@ -1,44 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-.footer {
-  background: #353535;
-  margin-top: 40px;
-}
-
-.footer .logo {
-  font-family: "Shrikhand", cursive;
-  padding-top: 20px;
-  padding-left: 25px;
-  font-size: 20px;
-  color: white;
-}
-
-.footer .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-weight: 300;
-  margin-left: 25px;
-  margin-top: 15px;
-}
-
-.footer .navigation .text {
-  padding: 6px;
-  margin: 0;
-  font-size: 15px;
-}
-
-.footer .navigation i {
-  margin-right: 10px;
-}
-
-.footer .navigation a {
-  color: white;
-  text-decoration: none;
+@media only screen and (max-width: 600px) {
+  .footer {
+    background: #353535;
+    margin-top: 40px;
+  }
+  .footer .logo {
+    font-family: "Shrikhand", cursive;
+    padding-top: 20px;
+    padding-left: 25px;
+    font-size: 20px;
+    color: white;
+  }
+  .footer .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-weight: 300;
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+  .footer .navigation .text {
+    padding: 6px;
+    margin: 0;
+    font-size: 15px;
+  }
+  .footer .navigation i {
+    margin-right: 10px;
+  }
+  .footer .navigation a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 @-webkit-keyframes heart-animation {
@@ -118,213 +115,201 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.header {
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header img {
+    width: 250px;
+  }
+  .header .arrow {
+    position: absolute;
+    left: 15px;
+  }
+  .header a {
+    color: black;
+    text-decoration: none;
+  }
+  .header i {
+    cursor: pointer;
+    font-size: 25px;
+  }
 }
 
-.header img {
-  width: 250px;
+@media only screen and (max-width: 600px) {
+  .top-background img {
+    width: 100%;
+    height: 310px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
-.header a {
-  color: black;
-  text-decoration: none;
+@media only screen and (max-width: 600px) {
+  .menu {
+    background: white;
+    top: -50px;
+    position: relative;
+    border-radius: 30px 30px 0 0;
+  }
+  .menu .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .title h1 {
+    padding-top: 20px;
+    font-family: "Shrikhand", cursive;
+    margin-left: 20px;
+    font-weight: 400;
+  }
+  .menu .title .heart svg {
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    fill: white;
+    width: 30px;
+    stroke: black;
+    stroke-width: 12px;
+  }
+  .menu .title .heart svg:hover {
+    stroke: white;
+    -webkit-animation: heart-animation 1.5s forwards;
+            animation: heart-animation 1.5s forwards;
+  }
+  .menu .plat .plat-type {
+    margin-left: 20px;
+    font-weight: 100;
+    position: relative;
+  }
+  .menu .plat .plat-type::after {
+    content: "";
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #8cddc9;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+  }
+  .menu .plat .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu .plat .list .card {
+    overflow: hidden;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 80% 20%;
+        grid-template-columns: 80% 20%;
+    border-radius: 20px;
+    width: 90%;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .menu .plat .list .card .name {
+    padding: 15px;
+  }
+  .menu .plat .list .card .name h3 {
+    font-size: 17px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .menu .plat .list .card .price {
+    font-weight: bold;
+    top: 39%;
+    right: 10px;
+    position: absolute;
+  }
+  .menu .plat .list .card .active {
+    border-radius: 0 20px 20px 0;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #99e2d0;
+  }
+  .menu .plat .list .card .active i {
+    color: white;
+    font-size: 30px;
+  }
+  .menu .plat .list .card:hover {
+    -ms-grid-columns: 70% 10% 20%;
+        grid-template-columns: 70% 10% 20%;
+  }
+  .menu .plat .list .card:hover > .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: activate 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: activate 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  .menu .plat .list .card:hover > .active i {
+    -webkit-animation: rotate 1s forwards;
+            animation: rotate 1s forwards;
+  }
+  .menu .plat .list .card:hover > .price {
+    position: relative;
+  }
 }
 
-.header i {
-  cursor: pointer;
-  position: absolute;
-  font-size: 25px;
-  left: 25px;
-}
-
-.top-background img {
-  width: 100%;
-  height: 310px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.menu {
-  background: white;
-  top: -50px;
-  position: relative;
-  border-radius: 30px 30px 0 0;
-}
-
-.menu .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu .title h1 {
-  padding-top: 20px;
-  font-family: "Shrikhand", cursive;
-  margin-left: 20px;
-  font-weight: 400;
-}
-
-.menu .title .heart svg {
-  position: absolute;
-  right: 30px;
-  font-size: 30px;
-  cursor: pointer;
-  fill: white;
-  width: 30px;
-  stroke: black;
-  stroke-width: 12px;
-}
-
-.menu .title .heart svg:hover {
-  stroke: white;
-  -webkit-animation: heart-animation 1.5s forwards;
-          animation: heart-animation 1.5s forwards;
-}
-
-.menu .plat .plat-type {
-  margin-left: 20px;
-  font-weight: 100;
-  position: relative;
-}
-
-.menu .plat .plat-type::after {
-  content: "";
-  width: 3rem;
-  height: 0.25rem;
-  background-color: #8cddc9;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-}
-
-.menu .plat .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu .plat .list .card {
-  overflow: hidden;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 80% 20%;
-      grid-template-columns: 80% 20%;
-  border-radius: 20px;
-  width: 90%;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  position: relative;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.menu .plat .list .card .name {
-  padding: 15px;
-}
-
-.menu .plat .list .card .name h3 {
-  font-size: 17px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 100%;
-  overflow: hidden;
-  margin: 0;
-  margin-bottom: 5px;
-}
-
-.menu .plat .list .card .price {
-  font-weight: bold;
-  top: 39%;
-  right: 10px;
-  position: absolute;
-}
-
-.menu .plat .list .card .active {
-  border-radius: 0 20px 20px 0;
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #99e2d0;
-}
-
-.menu .plat .list .card .active i {
-  color: white;
-  font-size: 30px;
-}
-
-.menu .plat .list .card:hover {
-  -ms-grid-columns: 70% 10% 20%;
-      grid-template-columns: 70% 10% 20%;
-}
-
-.menu .plat .list .card:hover > .active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: activate 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: activate 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.menu .plat .list .card:hover > .active i {
-  -webkit-animation: rotate 1s forwards;
-          animation: rotate 1s forwards;
-}
-
-.menu .plat .list .card:hover > .price {
-  position: relative;
-}
-
-.button {
-  text-align: center;
-  padding-top: 36px;
-}
-
-.button a {
-  text-decoration: none;
-  cursor: pointer;
-  color: white;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(#ff79da, #9356dc);
-  font-weight: bold;
-  padding: 14px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 20px;
-  font-size: 15px;
-  border: 0;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.button a:hover {
-  -webkit-box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9ee3), to(#a372df));
-  background-image: linear-gradient(#ff9ee3, #a372df);
+@media only screen and (max-width: 600px) {
+  .button {
+    text-align: center;
+    padding-top: 36px;
+  }
+  .button a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background-image: linear-gradient(#ff79da, #9356dc);
+    font-weight: bold;
+    padding: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 0;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .button a:hover {
+    -webkit-box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9ee3), to(#a372df));
+    background-image: linear-gradient(#ff9ee3, #a372df);
+  }
 }
 /*# sourceMappingURL=menu.css.map */
