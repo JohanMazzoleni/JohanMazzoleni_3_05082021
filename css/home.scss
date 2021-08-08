@@ -45,7 +45,7 @@ body {
 }
 
 .header {
-    @include mobile {
+    // @include mobile {
         padding-top: 15px;
         text-align: center;
         img {
@@ -53,11 +53,11 @@ body {
             width: 200px;
         }
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
+    // }
 }
 
 .location {
-    @include mobile {
+    // @include mobile {
         padding: 15px;
         text-align: center;
         background: $grey-color;
@@ -67,11 +67,11 @@ body {
         i {
             margin-right: 10px;
         }
-    }
+    // }
 }
 
 .hero {
-    @include mobile {
+    // @include mobile {
         text-align: center;
         background: #eeeeee;
         h1 {
@@ -106,11 +106,11 @@ body {
                 }
             }
         }
-    }
+    // }
 }
 
 .working {
-    @include mobile {
+    // @include mobile {
         h2 {
             margin: 0;
             margin-top: 50px;
@@ -166,11 +166,11 @@ body {
                 }
             }
         }
-    }
+    // }
 }
 
 .restaurant {
-    @include mobile {
+    // @include mobile {
         h2 {
             margin: 0;
             margin-top: 50px;
@@ -242,6 +242,13 @@ body {
                     }
                 }
             }
+        }
+    // }
+    @include tablet {
+        margin: 120px;
+        .list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }

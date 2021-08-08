@@ -45,7 +45,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 }
 
 .footer {
-    @include mobile {
+    // @include mobile {
         background: #353535;
         margin-top: 40px;
         .logo {
@@ -73,6 +73,13 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
                 color: white;
                 text-decoration: none;
             }
+        }
+    // }
+    @include tablet {
+        .navigation {
+            justify-content: space-around;
+            flex-direction: row;
+            padding-bottom: 20px;
         }
     }
 }

@@ -1,40 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-@media only screen and (max-width: 600px) {
-  .footer {
-    background: #353535;
-    margin-top: 40px;
-  }
-  .footer .logo {
-    font-family: "Shrikhand", cursive;
-    padding-top: 20px;
-    padding-left: 25px;
-    font-size: 20px;
-    color: white;
-  }
+.footer {
+  background: #353535;
+  margin-top: 40px;
+}
+
+.footer .logo {
+  font-family: "Shrikhand", cursive;
+  padding-top: 20px;
+  padding-left: 25px;
+  font-size: 20px;
+  color: white;
+}
+
+.footer .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 300;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.footer .navigation .text {
+  padding: 6px;
+  margin: 0;
+  font-size: 15px;
+}
+
+.footer .navigation i {
+  margin-right: 10px;
+}
+
+.footer .navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 601px) {
   .footer .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-weight: 300;
-    margin-left: 25px;
-    margin-top: 15px;
-  }
-  .footer .navigation .text {
-    padding: 6px;
-    margin: 0;
-    font-size: 15px;
-  }
-  .footer .navigation i {
-    margin-right: 10px;
-  }
-  .footer .navigation a {
-    color: white;
-    text-decoration: none;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 20px;
   }
 }
 
@@ -122,218 +137,245 @@ body {
   height: 60px;
 }
 
-@media only screen and (max-width: 600px) {
-  .header {
-    padding-top: 15px;
-    text-align: center;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  .header img {
-    padding: 10px;
-    width: 200px;
-  }
+.header {
+  padding-top: 15px;
+  text-align: center;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 600px) {
-  .location {
-    padding: 15px;
-    text-align: center;
-    background: #e8e8e8;
-    font-weight: bold;
-    color: #313131;
-  }
-  .location i {
-    margin-right: 10px;
-  }
+.header img {
+  padding: 10px;
+  width: 200px;
 }
 
-@media only screen and (max-width: 600px) {
-  .hero {
-    text-align: center;
-    background: #eeeeee;
-  }
-  .hero h1 {
-    padding-top: 28px;
-    font-weight: bold;
-    font-size: 25px;
-    margin: 0;
-  }
-  .hero .little {
-    padding-top: 10px;
-    margin: 0;
-    font-size: 18px;
-    color: #696969;
-  }
-  .hero .button {
-    padding-top: 36px;
-    padding-bottom: 60px;
-  }
-  .hero .button a {
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background-image: linear-gradient(#ff79da, #9356dc);
-    padding: 15px;
-    border-radius: 20px;
-    border: 0;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  .hero .button a:hover {
-    -webkit-box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9ee3), to(#a372df));
-    background-image: linear-gradient(#ff9ee3, #a372df);
-  }
+.location {
+  padding: 15px;
+  text-align: center;
+  background: #e8e8e8;
+  font-weight: bold;
+  color: #313131;
 }
 
-@media only screen and (max-width: 600px) {
-  .working h2 {
-    margin: 0;
-    margin-top: 50px;
-    margin-left: 10px;
-    font-size: 28px;
-  }
-  .working .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .working .list .work-card {
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 10px;
-    margin-top: 30px;
-    width: 80%;
-  }
-  .working .list .work-card .number {
-    background-color: #9356dc;
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 50%;
-    left: -19px;
-    top: 19px;
-    color: white;
-  }
-  .working .list .work-card .icone {
-    margin-left: 32px;
-  }
-  .working .list .work-card .icone i {
-    color: grey;
-    font-size: 25px;
-  }
-  .working .list .work-card h3 {
-    margin-left: 30px;
-  }
-  .working .list .work-card:hover {
-    background: #9356dc1c;
-  }
-  .working .list .work-card:hover i {
-    color: #9356dc;
-    font-size: 25px;
-  }
+.location i {
+  margin-right: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-  .restaurant h2 {
-    margin: 0;
-    margin-top: 50px;
-    margin-left: 10px;
-    font-size: 28px;
+.hero {
+  text-align: center;
+  background: #eeeeee;
+}
+
+.hero h1 {
+  padding-top: 28px;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+}
+
+.hero .little {
+  padding-top: 10px;
+  margin: 0;
+  font-size: 18px;
+  color: #696969;
+}
+
+.hero .button {
+  padding-top: 36px;
+  padding-bottom: 60px;
+}
+
+.hero .button a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
+  padding: 15px;
+  border-radius: 20px;
+  border: 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hero .button a:hover {
+  -webkit-box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9ee3), to(#a372df));
+  background-image: linear-gradient(#ff9ee3, #a372df);
+}
+
+.working h2 {
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+.working .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.working .list .work-card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.working .list .work-card .number {
+  background-color: #9356dc;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  left: -19px;
+  top: 19px;
+  color: white;
+}
+
+.working .list .work-card .icone {
+  margin-left: 32px;
+}
+
+.working .list .work-card .icone i {
+  color: grey;
+  font-size: 25px;
+}
+
+.working .list .work-card h3 {
+  margin-left: 30px;
+}
+
+.working .list .work-card:hover {
+  background: #9356dc1c;
+}
+
+.working .list .work-card:hover i {
+  color: #9356dc;
+  font-size: 25px;
+}
+
+.restaurant h2 {
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 10px;
+  font-size: 28px;
+}
+
+.restaurant .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant .list .card {
+  margin-top: 20px;
+  width: 90%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.restaurant .list .card a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant .list .card .image {
+  position: relative;
+}
+
+.restaurant .list .card .image img {
+  width: 100%;
+  height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.restaurant .list .card .image .new {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  background: #99e2d0;
+  color: green;
+  border-radius: 5px;
+}
+
+.restaurant .list .card .bottom {
+  position: relative;
+  padding: 10px;
+}
+
+.restaurant .list .card .bottom h3,
+.restaurant .list .card .bottom span {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.restaurant .list .card .bottom .heart svg {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  font-size: 30px;
+  cursor: pointer;
+  fill: white;
+  width: 30px;
+  stroke: black;
+  stroke-width: 12px;
+}
+
+.restaurant .list .card .bottom .heart svg:hover {
+  stroke: white;
+  -webkit-animation: heart-animation 1.5s forwards;
+          animation: heart-animation 1.5s forwards;
+}
+
+@media only screen and (min-width: 601px) {
+  .restaurant {
+    margin: 120px;
   }
   .restaurant .list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .restaurant .list .card {
-    margin-top: 20px;
-    width: 90%;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  .restaurant .list .card a {
-    text-decoration: none;
-    color: black;
-  }
-  .restaurant .list .card .image {
-    position: relative;
-  }
-  .restaurant .list .card .image img {
-    width: 100%;
-    height: 260px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
-  .restaurant .list .card .image .new {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    padding: 10px;
-    background: #99e2d0;
-    color: green;
-    border-radius: 5px;
-  }
-  .restaurant .list .card .bottom {
-    position: relative;
-    padding: 10px;
-  }
-  .restaurant .list .card .bottom h3,
-  .restaurant .list .card .bottom span {
-    margin: 0;
-    margin-left: 10px;
-  }
-  .restaurant .list .card .bottom .heart svg {
-    position: absolute;
-    right: 10px;
-    top: 30%;
-    font-size: 30px;
-    cursor: pointer;
-    fill: white;
-    width: 30px;
-    stroke: black;
-    stroke-width: 12px;
-  }
-  .restaurant .list .card .bottom .heart svg:hover {
-    stroke: white;
-    -webkit-animation: heart-animation 1.5s forwards;
-            animation: heart-animation 1.5s forwards;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 /*# sourceMappingURL=home.css.map */
