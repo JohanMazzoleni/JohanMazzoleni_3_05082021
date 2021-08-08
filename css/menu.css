@@ -383,9 +383,17 @@ body {
   margin-bottom: 5px;
 }
 
+.menu .plat .list .card .name span {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+
 .menu .plat .list .card .price {
   font-weight: bold;
-  top: 39%;
+  top: 60%;
   right: 10px;
   position: absolute;
 }

@@ -130,11 +130,19 @@ $menu-item: 9;
                         margin: 0;
                         margin-bottom: 5px;
                     }
+
+                    span {
+                        display: block;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        width: 100%;
+                        overflow: hidden;
+                    }
                 }
 
                 .price {
                     font-weight: bold;
-                    top: 39%;
+                    top: 60%;
                     right: 10px;
                     position: absolute;
                 }
