@@ -48,7 +48,7 @@ $menu-item: 10;
 
 @for $i from 1 through $menu-item {
     .n-#{$i} {
-        animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        animation: fade-in-bottom 1s both;
         animation-delay: #{$i * 0.2}s;
     }
 }
