@@ -80,26 +80,36 @@
 }
 
 @-webkit-keyframes heart-animation {
-  from {
+  0% {
     fill: white;
     stroke: black;
   }
-  to {
+  90% {
     stroke-width: 5;
     stroke: black;
-    fill: #9356dc;
+    fill: #ff79da;
+  }
+  100% {
+    stroke-width: 5;
+    stroke: black;
+    fill: url(#heart-gradient) #ff79da;
   }
 }
 
 @keyframes heart-animation {
-  from {
+  0% {
     fill: white;
     stroke: black;
   }
-  to {
+  90% {
     stroke-width: 5;
     stroke: black;
-    fill: #9356dc;
+    fill: #ff79da;
+  }
+  100% {
+    stroke-width: 5;
+    stroke: black;
+    fill: url(#heart-gradient) #ff79da;
   }
 }
 
@@ -131,23 +141,23 @@
 
 @-webkit-keyframes rotate {
   0% {
-    -webkit-transform: rotate(80deg);
-            transform: rotate(80deg);
-  }
-  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   0% {
-    -webkit-transform: rotate(80deg);
-            transform: rotate(80deg);
-  }
-  100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -197,7 +207,7 @@ body {
 }
 
 .header img {
-  width: 220px;
+  width: 180px;
 }
 
 .header .arrow {
@@ -328,8 +338,8 @@ body {
 
 .menu .title .heart svg:hover {
   stroke: white;
-  -webkit-animation: heart-animation 1.5s forwards;
-          animation: heart-animation 1.5s forwards;
+  -webkit-animation: heart-animation 200ms forwards;
+          animation: heart-animation 200ms forwards;
 }
 
 .menu .plat .plat-type {
@@ -419,7 +429,7 @@ body {
 
 .menu .plat .list .card .active i {
   color: white;
-  font-size: 30px;
+  font-size: 27px;
 }
 
 .menu .plat .list .card:hover {

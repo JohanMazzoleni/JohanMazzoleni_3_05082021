@@ -15,7 +15,7 @@ body {
     justify-content: center;
 
     img {
-        width: 220px;
+        width: 180px;
     }
 
     .arrow {
@@ -81,7 +81,7 @@ $menu-item: 10;
 
                 &:hover {
                     stroke: white;
-                    animation: heart-animation 1.5s forwards;
+                    animation: heart-animation 200ms forwards;
                 }
             }
         }
@@ -155,7 +155,7 @@ $menu-item: 10;
                     background: $tertiary;
                     i {
                         color: white;
-                        font-size: 30px;
+                        font-size: 27px;
                     }
                 }
 

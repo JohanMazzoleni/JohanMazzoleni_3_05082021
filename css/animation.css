@@ -10,6 +10,7 @@
     visibility: hidden;
   }
 }
+
 @keyframes loading {
   0% {
     opacity: 1;
@@ -20,6 +21,114 @@
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@-webkit-keyframes heart-animation {
+  0% {
+    fill: white;
+    stroke: black;
+  }
+  90% {
+    stroke-width: 5;
+    stroke: black;
+    fill: #ff79da;
+  }
+  100% {
+    stroke-width: 5;
+    stroke: black;
+    fill: url(#heart-gradient) #ff79da;
+  }
+}
+
+@keyframes heart-animation {
+  0% {
+    fill: white;
+    stroke: black;
+  }
+  90% {
+    stroke-width: 5;
+    stroke: black;
+    fill: #ff79da;
+  }
+  100% {
+    stroke-width: 5;
+    stroke: black;
+    fill: url(#heart-gradient) #ff79da;
+  }
+}
+
+@-webkit-keyframes activate {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes activate {
+  0% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=animation.css.map */

@@ -12,14 +12,21 @@
 }
 
 @keyframes heart-animation {
-    from {
+    0% {
         fill: white;
         stroke: black;
     }
-    to {
+
+    90% {
         stroke-width: 5;
         stroke: black;
-        fill: $primary;
+        fill: #ff79da;
+    }
+
+    100% {
+        stroke-width: 5;
+        stroke: black;
+        fill: url(#heart-gradient) #ff79da;
     }
 }
 
@@ -36,10 +43,10 @@
 
 @keyframes rotate {
     0% {
-        transform: rotate(80deg);
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 }
 
