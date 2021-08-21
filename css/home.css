@@ -92,7 +92,7 @@
   100% {
     stroke-width: 5;
     stroke: black;
-    fill: url(#heart-gradient) #ff79da;
+    fill: url("#heart-gradient-0") #ff79da;
   }
 }
 
@@ -109,7 +109,7 @@
   100% {
     stroke-width: 5;
     stroke: black;
-    fill: url(#heart-gradient) #ff79da;
+    fill: url("#heart-gradient-0") #ff79da;
   }
 }
 
